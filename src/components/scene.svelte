@@ -1,21 +1,43 @@
 <script lang="ts">
     import { T } from '@threlte/core';
-    import { OrbitControls } from '@threlte/extras';
-    import { SheetObject } from '@threlte/theatre';
+    import Knot from './knot.svelte';
+    // TODO: Make this respond to window resize
+    const cameraAspect = window.innerWidth / window.innerHeight;
 </script>
 
-<T.PerspectiveCamera position={[0, 5, 10]} makeDefault>
-    <OrbitControls target={{ y: 1.5 }} />
-</T.PerspectiveCamera>
-
-<!-- Box -->
-<SheetObject key="Box" let:Transform let:Sync>
-    <Transform>
-        <T.Mesh receiveShadow castShadow position.y={0.5}>
-            <T.BoxGeometry args={[1, 1, 1]} />
-            <T.MeshStandardMaterial color="#b00d03">
-                <Sync color roughness metalness />
-            </T.MeshStandardMaterial>
-        </T.Mesh>
-    </Transform>
-</SheetObject>
+<T.PerspectiveCamera
+    makeDefault
+    fov={70}
+    aspect={cameraAspect}
+    near={10}
+    far={200}
+    position.z={50}
+/>
+<T.DirectionalLight
+    intensity={40}
+    color="#FF0000"
+    position.y={20}
+    position.z={20}
+    castShadow
+    shadow.mapSize.width={2048}
+    shadow.mapSize.height={2048}
+    shadow.camera.far={50}
+    shadow.camera.near={1}
+    shadow.camera.top={20}
+    shadow.camera.right={20}
+    shadow.camera.bottom={-20}
+    shadow.camera.left={-20}
+/>
+<T.RectAreaLight
+    color="FF0"
+    width={50}
+    height={50}
+    position.z={10}
+    position.y={-40}
+    position.x={-20}
+    on:create={({ ref }) => {
+        ref.lookAt(0, 0, 0);
+    }}
+/>
+<T.AmbientLight intensity={0.45} />
+<Knot key="torus" />
