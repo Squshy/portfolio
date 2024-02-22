@@ -6,7 +6,7 @@
 
     let rotation = 0;
     useTask((d) => {
-        rotation += d / 2;
+        rotation += d / 8;
     });
 </script>
 
@@ -45,4 +45,4 @@
     }}
 />
 <T.AmbientLight intensity={0.45} />
-<Knot key="torus" rotation.y={rotation} />
+<Knot key="torus" rotation={[rotation, rotation, rotation]} />

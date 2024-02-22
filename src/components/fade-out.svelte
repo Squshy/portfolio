@@ -1,0 +1,17 @@
+<script lang="ts">
+    // @see: https://github.com/threlte/threlte/blob/main/apps/docs/src/components/Hero/FadeOut.svelte
+    import { clamp, mapLinear } from 'three/src/math/MathUtils';
+
+    export let progress: number;
+
+    export let from: number = 0;
+    export let to: number = 1;
+
+    $: p = clamp(mapLinear(progress, from, to, 1, 0), 0, 1);
+</script>
+
+<div style="opacity: {p};">
+    {#if p > 0}
+        <slot />
+    {/if}
+</div>
