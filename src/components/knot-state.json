@@ -1,0 +1,38 @@
+{
+  "sheetsById": {
+    "default": {
+      "staticOverrides": {
+        "byObject": {
+          "torus": {
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "color": {
+              "r": 0,
+              "g": 0.45098039215686275,
+              "b": 0.4666666666666667,
+              "a": 1
+            },
+            "roughness": 0.45
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "MhY9JsOQcMjuuatu"
+  ]
+}

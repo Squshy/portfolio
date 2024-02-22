@@ -1,8 +1,13 @@
 <script lang="ts">
-    import { T } from '@threlte/core';
+    import { T, useTask } from '@threlte/core';
     import Knot from './knot.svelte';
     // TODO: Make this respond to window resize
     const cameraAspect = window.innerWidth / window.innerHeight;
+
+    let rotation = 0;
+    useTask((d) => {
+        rotation += d / 2;
+    });
 </script>
 
 <T.PerspectiveCamera
@@ -40,4 +45,4 @@
     }}
 />
 <T.AmbientLight intensity={0.45} />
-<Knot key="torus" />
+<Knot key="torus" rotation.y={rotation} />
