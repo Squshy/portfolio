@@ -22,7 +22,7 @@
             'Vite',
             'Changelogs',
             'TurboRepo',
-        ]}>A <i>blasingly fast</i> alert library for React.</Card
+        ]}>A <i>blazingly fast</i>🔥 alert library for React.</Card
     >
     <Card
         title="TewDew"
