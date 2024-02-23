@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/layout.astro';
 import Hero from '../components/hero/hero.svelte';
-import Chillin from '../components/experience/chillin.svelte';
+import Experience from '../components/experience/chillin.svelte';
+import Projects from '../components/projects/stinky.svelte';
 ---
 
 <Layout title="Kinda stinky">
     <main>
         <Hero client:load />
-        <Chillin client:load />
+        <Experience />
+        <Projects />
     </main>
 </Layout>
