@@ -1,7 +1,7 @@
 <script lang="ts">
     import { Sequence } from '@threlte/theatre';
-    import TheatreTextBox from './theatre-text-box.svelte';
-    import Icon from './icon.svelte';
+    import TheatreTextBox from '../theatre-text-box.svelte';
+    import Icon from '../icon.svelte';
 </script>
 
 <Sequence autoplay />
@@ -27,6 +27,7 @@
                 </h1>
             </TheatreTextBox>
             <TheatreTextBox key="icons">
+                <!-- TODO: Fix the scaling clipping -->
                 <div class="flex flex-row gap-2 items-center">
                     <a href="https://github.com/Squshy" target="_blank">
                         <Icon

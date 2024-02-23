@@ -216,11 +216,11 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 0.01
+                    "value": 0.0001
                   },
                   {
                     "id": "YPU3-z8qPB",
-                    "position": 3.933,
+                    "position": 2.6,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -252,7 +252,7 @@
                   },
                   {
                     "id": "E4KONYm_Wm",
-                    "position": 3.933,
+                    "position": 2.6,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -280,11 +280,11 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 0.01
+                    "value": 0.0001
                   },
                   {
                     "id": "IXTdyQXP-0",
-                    "position": 3.933,
+                    "position": 2.6,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -325,7 +325,7 @@
                   },
                   {
                     "id": "yM6985QnCB",
-                    "position": 3.933,
+                    "position": 2.6,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -353,11 +353,11 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 0.01
+                    "value": 0.0001
                   },
                   {
                     "id": "x2RAcmnBIu",
-                    "position": 3.933,
+                    "position": 2.6,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -385,11 +385,11 @@
                       0
                     ],
                     "type": "bezier",
-                    "value": 0.01
+                    "value": 0.0001
                   },
                   {
                     "id": "JWL-wF5H-F",
-                    "position": 3.933,
+                    "position": 2.6,
                     "connectedRight": true,
                     "handles": [
                       0.5,
@@ -415,6 +415,7 @@
   },
   "definitionVersion": "0.4.0",
   "revisionHistory": [
+    "ypd4krEu2k9Yk8-7",
     "05sO-J3irPpP6Y6m",
     "VnFPPIfgomMc4RG_",
     "3QN2qbnaPCJm6Rh8",
