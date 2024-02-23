@@ -2,7 +2,7 @@
     import { Canvas } from '@threlte/core';
     import { Theatre, Sheet } from '@threlte/theatre';
     import Scene from './scene.svelte';
-    import state from './knot-state.json';
+    import state from './animation-state.json';
     import Test from './test.svelte';
 </script>
 

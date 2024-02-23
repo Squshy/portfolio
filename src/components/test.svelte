@@ -26,20 +26,25 @@
                     Senior Software Engineer at PostGrid
                 </h1>
             </TheatreTextBox>
-            <div class="flex flex-row gap-2 items-center">
-                <a href="https://github.com/Squshy" target="_blank">
-                    <Icon
-                        name="GitHub"
-                        class="w-8 h-8 flex hover:scale-110 transition duration-100 ease-out fill-white/70 hover:fill-white"
-                    />
-                </a>
-                <a href="https://linkedin.com/in/calvin-lapp" target="_blank">
-                    <Icon
-                        name="LinkedIn"
-                        class="w-8 h-8 flex hover:scale-110 transition duration-100 ease-out fill-white/70 hover:fill-white"
-                    />
-                </a>
-            </div>
+            <TheatreTextBox key="icons">
+                <div class="flex flex-row gap-2 items-center">
+                    <a href="https://github.com/Squshy" target="_blank">
+                        <Icon
+                            name="GitHub"
+                            class="w-8 h-8 flex hover:scale-110 transition duration-100 ease-out fill-white/70 hover:fill-white"
+                        />
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/calvin-lapp"
+                        target="_blank"
+                    >
+                        <Icon
+                            name="LinkedIn"
+                            class="w-8 h-8 flex hover:scale-110 transition duration-100 ease-out fill-white/70 hover:fill-white"
+                        />
+                    </a>
+                </div>
+            </TheatreTextBox>
         </div>
     </div>
 </div>
