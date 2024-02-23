@@ -23,7 +23,12 @@
                 <h1
                     class="w-full text-center text-lg font-semibold text-white/70"
                 >
-                    Senior Software Engineer at PostGrid
+                    Senior Software Engineer at <a
+                        href="https://postgrid.com"
+                        target="_blank"
+                        class="border-b-teal-100/60 border-b-[0.2px] hover:text-white transition duration-150 ease-out"
+                        >PostGrid</a
+                    >
                 </h1>
             </TheatreTextBox>
             <TheatreTextBox key="icons">
