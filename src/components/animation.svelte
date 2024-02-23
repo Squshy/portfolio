@@ -7,7 +7,7 @@
 </script>
 
 <div class="w-full h-screen z-20 relative">
-    <Theatre config={{ state }} studio={{ enabled: true }}>
+    <Theatre config={{ state }} studio={{ enabled: false }}>
         <div class="fixed left-0 top-0 w-screen z-10 h-screen">
             <Canvas>
                 <Scene />
