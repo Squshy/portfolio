@@ -1,12 +1,15 @@
 <script lang="ts">
+    import Tag from './tag.svelte';
+
     export let from: string;
     export let till = 'present';
     export let title: string;
     export let companyName: string;
     export let link: string;
+    export let technologies: string[] = [];
 </script>
 
-<div class="group hover:bg-[#1e2129] p-12 grid sm:grid-cols-8">
+<div class="group hover:bg-[#1e2129] p-8 grid sm:grid-cols-8">
     <!-- Date -->
     <div class="w-full sm:col-span-2 px-4 py-2">
         <p
@@ -26,5 +29,14 @@
             >
         </h2>
         <p class="mt-2 text-md leading-normal"><slot /></p>
+        {#if technologies.length}
+            <ul class="mt-2 flex flex-wrap">
+                {#each technologies as t}
+                    <li class="mr-1.5 mt-2">
+                        <Tag>{t}</Tag>
+                    </li>
+                {/each}
+            </ul>
+        {/if}
     </div>
 </div>
