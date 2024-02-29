@@ -1,21 +1,37 @@
 <script lang="ts">
     import Card from '../card.svelte';
+    type PastTitle = {
+        name: string;
+        from: string;
+        till: string;
+    };
 
     export let from: string;
     export let till = 'present';
     export let title: string;
     export let companyName: string;
     export let link: string;
+    export let pastTitles: PastTitle[] = [];
     export let technologies: string[] = [];
 </script>
 
 <Card {technologies}>
-    <p
+    <ul
         slot="side"
-        class="w-full text-right uppercase font-semibold tracking-wide text-slate-500 text-sm"
+        class="w-full text-right font-semibold tracking-wide text-slate-500 text-sm"
     >
-        {from} — {till}
-    </p>
+        <li>
+            <p class="uppercase">{from} — {till}</p>
+        </li>
+        {#each pastTitles as pastTitle}
+            <li class="mt-2">
+                <p class="uppercase">
+                    {pastTitle.from} — {pastTitle.till}
+                </p>
+                <p class="text-xs italic">{pastTitle.name}</p>
+            </li>
+        {/each}
+    </ul>
     <a
         slot="title"
         href={link}

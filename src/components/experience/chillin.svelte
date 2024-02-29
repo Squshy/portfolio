@@ -9,21 +9,29 @@
     <Card
         title="Senior Software Engineer"
         companyName="PostGrid"
+        pastTitles={[
+            { name: 'Backend Engineer', from: 'Feb 2022', till: 'Sept 2023' },
+        ]}
         link="https://postgrid.com"
-        from="Sept 2023"
-        technologies={['TypeScript', 'React', 'Express', 'MongoDB', 'Rust']}
-        >Hey there. Just gonna put some random jargon here for a lil bit to take
-        up some space I guess. I did some stuff</Card
-    >
-    <Card
-        title="Backend Engineer"
-        companyName="PostGrid"
-        link="https://postgrid.com"
-        from="Feb 2022"
-        till="Sept 2023"
-        technologies={['TypeScript', 'React', 'Express', 'MongoDB', 'Rust']}
-        >Hey there. Just gonna put some random jargon here for a lil bit to take
-        up some space I guess. I did some stuff</Card
+        from="Sept 2022"
+        technologies={[
+            'TypeScript',
+            'React',
+            'NodeJS',
+            'Express',
+            'MongoDB',
+            'Rust',
+            'Python',
+            'Docker',
+            'AWS',
+        ]}
+        >Maintained, built, and shipped production code for vital business
+        products servicing millions of API requests daily. Designed and led the
+        implementation of new core large scale features from start to finish.
+        Enhanced front-end reliability by implementing a comprehensive test
+        suite. Maintained and built third party integrations including HubSpot
+        and Stripe. Mentored and provided leadership with co-op engineers
+        through collaboration and knowledge shares.</Card
     >
     <Card
         title="React Native Developer"
@@ -31,10 +39,16 @@
         link="https://durhamcollege.ca/about/office-of-research-services-innovation-and-entrepreneurship-orsie"
         from="Feb 2022"
         till="Sept 2023"
-        technologies={['JavaScript', 'React Native', 'Express', 'MongoDB']}
-        >Hey there. Just gonna put some random jargon here for a lil bit to take
-        up some space I guess. I did some stuff</Card
-    >
+        technologies={[
+            'JavaScript',
+            'React Native',
+            'NodeJS',
+            'Express',
+            'MongoDB',
+        ]}
+        >Collaborated with other students to build a social media native mobile
+        application for a local client.
+    </Card>
     <Card
         title="Front-End Engineer"
         companyName="A.I. Hub, Durham College"
@@ -43,7 +57,7 @@
         till="Sept 2023"
         technologies={['JavaScript', 'React']}
     >
-        Hey there. Just gonna put some random jargon here for a lil bit to take
-        up some space I guess. I did some stuff
+        Developed a web portal for a health care client, working with external
+        APIs to populate and consume patient information.
     </Card>
 </ContentWrapper>

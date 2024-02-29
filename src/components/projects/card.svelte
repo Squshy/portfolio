@@ -35,14 +35,14 @@
                 aria-label={`${title}'s GitHub (opens in a new tab)`}
                 ><Icon
                     name="GitHub"
-                    class="w-5 h-5 fill-slate-500 hover:fill-teal-200 transition duration-75 ease-out hover:scale-110"
+                    class="w-5 h-5 fill-slate-500 hover:fill-slate-100 transition duration-75 ease-out hover:scale-110"
                 /></a
             >
             {#if liveLink}
                 <a
                     href={liveLink}
                     target="_blank"
-                    class="text-slate-500 hover:text-teal-200 transition duration-75 ease-out group/link"
+                    class="text-slate-500 hover:text-slate-100 transition duration-75 ease-out group/link"
                     aria-label={`A live link for ${title} (opens in a new tab)`}
                 >
                     <Icon
