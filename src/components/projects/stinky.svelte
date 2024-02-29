@@ -17,7 +17,7 @@
         pairs. This project incorporates ideas presented in the book <a
             href="https://dataintensive.net/"
             target="_blank"
-            class="text-teal-100 hover:text-teal-200 transition duration-50 ease-out italic"
+            class="text-teal-400 hover:text-teal-200 transition duration-50 ease-out italic"
             aria-label="Designing Data Intensive applications website (opens in new page)."
             >Designing Data Intensive Applications</a
         > by Martin Fowler.</Card
@@ -73,7 +73,7 @@
             href="https://github.com/Squshy"
             target="_blank"
             aria-label="My personal GitHub (opens in a new page)."
-            class="text-teal-100 hover:text-teal-200 transition duration:50 ease-out"
+            class="text-teal-400 hover:text-teal-200 transition duration:50 ease-out"
             >GitHub</a
         >.
     </p>

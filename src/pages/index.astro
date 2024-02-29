@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/layout.astro';
 import Hero from '../components/hero/hero.svelte';
+import About from '../components/about/me.svelte';
 import Experience from '../components/experience/chillin.svelte';
 import Projects from '../components/projects/stinky.svelte';
 import Footer from '../components/footer.svelte';
@@ -9,6 +10,7 @@ import Footer from '../components/footer.svelte';
 <Layout title="Kinda stinky">
     <main>
         <Hero client:load />
+        <About />
         <Experience />
         <Projects />
         <Footer />
