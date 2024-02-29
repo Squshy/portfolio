@@ -1,6 +1,6 @@
 <script lang="ts">
     // @see: https://github.com/threlte/threlte/blob/main/apps/docs/src/components/Hero/Reveal.svelte
-    import { clamp, mapLinear } from 'three/src/math/MathUtils';
+    import { clamp, mapLinear } from 'three/src/math/MathUtils.js';
 
     export let progress: number;
 

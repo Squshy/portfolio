@@ -1,12 +1,13 @@
 <script lang="ts">
     import { T } from '@threlte/core';
-    import * as THREE from 'three';
+    import { Color } from 'three/src/math/Color.js';
+    import { TorusKnotGeometry } from 'three/src/geometries/TorusKnotGeometry.js';
     import { SheetObject } from '@threlte/theatre';
 
     // TODO: Figure out how to type and pass props correctly for $$restProps
     export let key: string;
-    export let materialColor = new THREE.Color('#049ef4');
-    const geo = new THREE.TorusKnotGeometry(10, 3, 300, 16);
+    export let materialColor = new Color('#049ef4');
+    const geo = new TorusKnotGeometry(10, 3, 300, 16);
 </script>
 
 <SheetObject {key} let:Transform let:Sync>

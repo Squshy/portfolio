@@ -1,6 +1,4 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "Bundler",
-    },
-    "extends": "astro/tsconfigs/strict"
+    "extends": "astro/tsconfigs/strictest",
+    "exclude": ["node_modules"]
 }
