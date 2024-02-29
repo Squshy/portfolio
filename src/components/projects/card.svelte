@@ -24,7 +24,7 @@
     </p>
     <svelte:fragment slot="title">
         <h3
-            class="leading-tight text-slate-200 font-semibold group/link text-lg"
+            class="leading-tight text-slate-200 font-semibold group-hover:text-teal-400 transition ease-out text-lg"
         >
             {title}
         </h3>
@@ -35,14 +35,14 @@
                 aria-label={`${title}'s GitHub (opens in a new tab)`}
                 ><Icon
                     name="GitHub"
-                    class="w-5 h-5 fill-slate-500 hover:fill-slate-100 transition duration-75 ease-out hover:scale-110"
+                    class="w-5 h-5 group-hover:fill-teal-400 fill-slate-500 hover:fill-slate-100 transition ease-out hover:scale-110"
                 /></a
             >
             {#if liveLink}
                 <a
                     href={liveLink}
                     target="_blank"
-                    class="text-slate-500 hover:text-slate-100 transition duration-75 ease-out group/link"
+                    class="text-slate-500 transition ease-out group-hover:text-teal-400"
                     aria-label={`A live link for ${title} (opens in a new tab)`}
                 >
                     <Icon

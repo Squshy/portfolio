@@ -35,7 +35,7 @@
     <a
         slot="title"
         href={link}
-        class="leading-tight text-slate-200 font-semibold group/link text-lg"
+        class="leading-tight text-slate-200 font-semibold group/link text-lg group-hover:text-teal-400 transition ease-out"
         target="_blank"
         aria-label={`${title} at ${companyName} (opens in a new tab)`}
         >{title} | {companyName}</a
